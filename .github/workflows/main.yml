@@ -16,5 +16,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .  # Публикация всех файлов из корня репозитория
-          destination_dir: v${{ github.event.release.tag_name }}  # Публикация по версии релиза
+          publish_dir: .  
+          destination_dir: v${{ github.event.release.tag_name }}
